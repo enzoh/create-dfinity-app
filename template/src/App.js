@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Import canisters as usually
+import test from 'ic:canisters/test';
 
 function App() {
+  const [val, setVal] = useState();
+
+  useEffect(() => {
+    // Call a public function defined in the canister
+    test.getValue().then((response) => {
+      // Since the response is a BigNumber we need to stringify it
+      setVal(response.toString());
+    });
+  }, []);
+
+  const onIncrement = useCallback(async () => {
+    // Call another public function
+    await test.increment();
+    // Get latest value from canister again
+    setVal((await test.getValue()).toString());
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +37,8 @@ function App() {
         >
           Learn React
         </a>
+        <h2>Value received from Dfinity: {val}</h2>
+        <button onClick={onIncrement}>Increment</button>
       </header>
     </div>
   );
