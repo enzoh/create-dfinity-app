@@ -13,6 +13,7 @@
       "build": "craco build",
       "test": "craco test",
       "eject": "craco eject"
-    }
+    },
+    "proxy": "http://localhost:8000"
   }
 }
