@@ -13,6 +13,8 @@ npm init react-app my-app --template dfn
 yarn create react-app my-app --template dfn
 ```
 
+### `npm init react-app my-app --template dfn` or  `yarn create react-app my-app --template dfn`
+
 ### Start the backend 
 ```sh
 cd my-app
@@ -24,10 +26,7 @@ dfx canister install test
 ```
 
 ### Now use CRA as usually
-```
-npm start
-yarn start
-```
+### `npm start` or `yarn start`
 
 
 
