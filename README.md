@@ -8,7 +8,7 @@ https://sdk.dfinity.org/docs/download.html
 
 ### Create an App
 Pick your preferred package manager
-### `npm init react-app my-app --template dfn` or  `yarn create react-app my-app --template dfn`
+##### `npm init react-app my-app --template dfn` or  `yarn create react-app my-app --template dfn`
 
 ### Start the backend 
 ```sh
@@ -21,7 +21,7 @@ dfx canister install test
 ```
 
 ### Now use CRA as usually
-### `npm start` or `yarn start`
+##### `npm start` or `yarn start`
 
 
 
