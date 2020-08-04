@@ -8,11 +8,6 @@ https://sdk.dfinity.org/docs/download.html
 
 ### Create an App
 Pick your preferred package manager
-```sh
-npm init react-app my-app --template dfn
-yarn create react-app my-app --template dfn
-```
-
 ### `npm init react-app my-app --template dfn` or  `yarn create react-app my-app --template dfn`
 
 ### Start the backend 
