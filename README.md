@@ -7,7 +7,6 @@ Make sure you have the latest Dfinity SDK installed before starting it
 https://sdk.dfinity.org/docs/download.html
 
 ### Create an App
-Pick your preferred package manager
 ##### `npm init react-app my-app --template dfn` or  `yarn create react-app my-app --template dfn`
 
 ### Start the backend 
