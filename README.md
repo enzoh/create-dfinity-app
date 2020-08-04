@@ -28,3 +28,11 @@ dfx canister install test
 npm start
 yarn start
 ```
+
+
+
+
+## BAM! You're done
+<p align='left'>
+<img src='https://media.giphy.com/media/S3zUlqumop4DT2TPWI/giphy.gif' width='600' alt='npm start'>
+</p>
